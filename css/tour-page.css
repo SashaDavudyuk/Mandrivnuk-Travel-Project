@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+
+.container-tour-page {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 0 15px 0 15px;
+    background-color: #fff;
+}
+
+.name-details {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    max-width: 1260px;
+}
+
+.name-details h1 {
+    font-size: 34px;
+    font-weight: 400;
+    color: #0056AD;
+    margin: 0 0 6px;
+}
+
+.name-details h3 {
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.gallery-item {
+    display: grid;
+    margin: auto;
+    max-width: 1260px;
+    height: auto;
+    padding: 30px 0 20px 30px;
+    grid-template-columns: 55% 42%;
+    grid-column-gap: 3%;
+    grid-row-gap: 3%;
+}
+
+.tour-page-img img {
+    position: relative;
+    margin: 0 0 50px;
+    padding: 0 20px 0 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    }
+    
+.tour-page-text h3 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.6em;
+}
+
+.tour-page-text p span:hover {
+    color: #a78459;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+
+.tour-page-text h2 {
+    color: tomato;
+}
+
+.fa-star {
+    color: #fded29;
+}
+
+.tour-page-button {
+    padding: 10px 101px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #ffbf47;
+}
+
+.tour-page-button a {
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.tour-page-text-third {
+    display: block;
+    margin: auto;
+    max-width: 1260px;
+    height: auto;
+    padding: 20px 0 40px 0px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media(max-width: 1100px){
+    .gallery-item {
+        display: block;
+    }
+
+    .tour-page-text {
+        max-width: 830px;
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-row-gap: 2%;
+        grid-column-gap: 2%;
+    }
+
+    .retreat {
+        display: none;
+    }
+}
+
+@media(max-width: 730px){
+    .tour-page-text {
+        max-width: 100%;
+        margin-top: 25px;
+        display: block;
+    }
+
+    .retreat {
+        display: block;
+    }
+}
+
+@media(max-width: 390px){
+    .tour-page-button {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
