@@ -1,0 +1,155 @@
+/* Third block with posts */
+
+.posts {
+    margin: auto;
+    max-width: 1260px;
+    height: auto;
+    display: block;
+    position: relative;
+    margin-bottom: 50px;
+    padding: 0px 20px;
+}
+
+.post {
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+    margin: 0 45px 0 0;
+    width: 33.333333%;
+}
+
+.post-img img {
+    width: 100%;
+    height: 250px;
+    filter: brightness(0.7);
+    object-position: center;
+    object-fit: cover;}
+
+.post-img img:hover {
+    filter: none;
+    transition: .3s ease-out;
+    transition-delay: 0.1s;
+}
+
+.post-text {
+    padding: 16px 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.post-text h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0 0 8px 0;
+}
+
+.post-text h3:hover {
+    color: #e74c3c;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+
+.post-text p {
+    font-size: 14px;
+    color: grey;
+}
+
+.data-comments {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7fafc;
+    color: #1a202c;
+    padding: 12px 24px;
+    display: flex;
+}
+
+.data-comments .comments, .data-comments .data{
+    width: 50%;
+    margin: 0 4px 0 0;
+    padding: 4px 0;
+}
+
+.data-comments .comments {
+    text-align: end;
+}
+
+.data-comments .comments, .data-comments .data{
+    width: 50%;
+}
+
+
+@media (max-width: 900px) {
+  .flex-block-with-content {
+      display: block!important;
+  }
+  .second-progress-text{
+      display: block;
+  }
+  .progress-text{
+      display: none;
+  }
+}
+
+/* Counter */
+.section-stats-content {
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: #808080;
+  margin: auto;
+  text-align: center;
+}
+
+.counter {
+  padding: 20px 0;
+  margin-right: 2%;
+}
+
+.counter:nth-child(4) {
+  margin-right: 0;
+}
+
+.numbers {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 28px;
+  color: #808080;
+}
+
+.count-text {
+  color: #808080;
+  font-weight: 400;
+}
+
+.fa-2x {
+  margin: 0 auto;
+  float: none;
+  color: #baaf92;
+  font-size: 4em!important;
+}
+
+@media (max-width: 900px) {
+  .section-stats-content {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .section-stats-content {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.agreement {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media (max-width: 900px) {
+  .agreement {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .agreement {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}

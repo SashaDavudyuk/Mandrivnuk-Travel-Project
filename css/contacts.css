@@ -1,0 +1,127 @@
+/* Contacts section */
+  
+.contact {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    max-width: 980px;
+    margin: auto;
+    box-shadow: 0 0 15px 5px rgb(0 0 0 / 10%);
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.contact .form-control {
+    width: 100%;
+    padding: 20px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    border: 1px solid silver;
+}
+
+.col-md-7 {
+  padding: 60px 45px 30px;
+}
+
+.contact iframe {
+    border: 0;
+    border-radius: 10px;
+    min-height: 445px;
+}
+
+.contact .area-for-messages {
+    height: 191px;
+}
+
+.contact button.btn {
+    padding: 15px 40px;
+    font-size: 15px;
+    background: cadetblue;
+    color: #ffffff;
+    border: none;
+}
+
+.contact .contact-button {
+    margin: auto;
+    width: 35%;
+}
+
+.contact button.btn:hover {
+  background: lemonchiffon;
+  transition: .5s ease-out;
+  cursor: pointer;
+  color: #000;
+}
+  
+.contact .inform-text {
+  padding: 10px 25px;
+}
+
+.contacts-info {
+  padding: 60px 35px;
+  background-color: cadetblue;
+  color: #fff;
+}
+
+.contacts-info h3 {
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4em;
+  margin-bottom: 45px;
+}
+
+.contacts-info p {
+  position: relative;
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.8em;
+  padding-left: 45px;
+}
+
+.contacts-info .contacts-details i {
+  position: absolute;
+  padding-top: 8px;
+  font-size: 30px;
+}
+
+.contacts-info h4 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contacts-info a i {
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+  transition: all .3s;
+}
+
+.contacts-info a i:hover, .contacts-info .contacts-details a:hover {
+  color: lemonchiffon;
+}
+
+@media(max-width: 800px) {
+    .contact {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-article {
+      padding: 0;
+    }
+}
+
+@media(max-width: 460px) {
+  .contact .contact-row {
+    grid-template-columns: repeat(1, 1fr);
+}
+}
