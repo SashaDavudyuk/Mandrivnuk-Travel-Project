@@ -113,6 +113,10 @@ ul li::marker {
     color: #59267c;
 }
 
+.fa-telegram:before {
+color: royalblue;
+}
+
 footer .fa-envelope:before {
     color: #dd4b39;
 }
